@@ -1,0 +1,14 @@
+{
+    "header_telephon" : "+7(920) 225-18-35",
+    "city_selector_title" : "Ваш город",
+    "header_login_btn": "Войти",
+
+    "login_form_title": "Вход",
+    "login_form_login": "Ваш Логин",
+    "login_form_email": "Ваш Email",
+    "login_form_password": "Ваш Пароль",
+    "login_form_submit": "Войти",
+    "login_form_close": "Закрыть",
+    "login_form_register": "Регистрация"
+
+}
