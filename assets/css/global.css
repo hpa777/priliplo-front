@@ -39,10 +39,15 @@
   --color-my-gray:#eaeaea;
 
   --radius-1.25: 1.25rem;
+  --radius-1.88: 1.88rem;
+  
 }
 @utility container {
   margin-inline: auto;
   padding-inline: 1.2rem;
+  @variant xl {
+    padding-inline: 0;
+  }
   /*
    @variant sm {
     padding-inline: 20px;
@@ -52,9 +57,7 @@
     padding-inline: 80px;
   }
   
-  @variant xl {
-    padding-inline: 120px;
-  }
+  
     */
 }
 html {
