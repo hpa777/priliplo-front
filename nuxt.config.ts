@@ -33,5 +33,12 @@ export default defineNuxtConfig({
       '/media/**' : { proxy: process.env.MEDIA_URL },
       '/api/**' : { proxy: process.env.API_URL }
     }
+  },
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'ru'
+      }
+    }
   }    
 })

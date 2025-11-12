@@ -4,8 +4,8 @@
             {{ slider?.title }}
         </h2>
 
-        <div class="relative lg:mt-8 lg:px-[4.5rem] xl:-mx-16 xl:px-0">
-            <div class="mt-8 mb-5 flex justify-center gap-x-4 text-[#E0E1E2] lg:absolute lg:top-[6.7rem] lg:left-0 lg:z-10 lg:m-0 lg:h-0 lg:w-full lg:justify-between lg:px-6 xl:px-0 xl:-left-20 xl:top-[14.2rem] xl:w-[calc(100%+10rem)]">
+        <div class="relative lg:mt-8 lg:px-[4.5rem]">
+            <div class="mt-8 mb-5 flex justify-center gap-x-4 text-[#E0E1E2] lg:absolute lg:top-[6.7rem] lg:left-0 lg:z-10 lg:m-0 lg:h-0 lg:w-full lg:justify-between lg:px-6 xl:px-0 xl:top-[11.6rem] ">
                 <button id="about-prev-button">
                     <icon-left-arrow />
                 </button>
