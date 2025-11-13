@@ -14,7 +14,7 @@
 					<IconDown class="absolute right-1.5 text-white" />
 				</ListboxButton>
 				<ListboxOptions
-					class="absolute top-full left-0 z-10 bg-white p-2.5 shadow"
+					class="absolute top-full left-0 z-10 bg-white p-2.5 shadow z-20"
 				>
 					<ListboxOption
 						v-for="city in cities"
