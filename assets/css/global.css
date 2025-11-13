@@ -1,49 +1,53 @@
 @font-face {
-  font-family: "GothamPro";
-  src: url("/fonts/gothampro.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;  
+    font-family: 'GothamPro';
+    src: url('/fonts/gothampro.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
 }
 @font-face {
-  font-family: "GothamPro";
-  src: url("/fonts/gothampro_medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;  
+    font-family: 'GothamPro';
+    src: url('/fonts/gothampro_medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
 }
 @font-face {
-  font-family: "GothamPro";
-  src: url("/fonts/gothampro_bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;  
+    font-family: 'GothamPro';
+    src: url('/fonts/gothampro_bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
 }
 @font-face {
-  font-family: "GothamPro";
-  src: url("/fonts/gothampro_black.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal;  
+    font-family: 'GothamPro';
+    src: url('/fonts/gothampro_black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
 }
 
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --breakpoint-*: initial;
-  --breakpoint-sm: 480px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 960px;
-  --breakpoint-xl: 1396px;
+    --breakpoint-*: initial;
+    --breakpoint-sm: 480px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 960px;
+    --breakpoint-xl: 1396px;
 
-  --font-gotham: "GothamPro", sans-serif;
+    --font-gotham: 'GothamPro', sans-serif;
 
-  --color-my-yellow:#feb800;
-  --color-my-blue:#367cb9;
-  --color-my-gray:#eaeaea;
+    --color-my-yellow: #feb800;
+    --color-my-blue: #367cb9;
+    --color-my-gray: #eaeaea;
 
-  --radius-1.25: 1.25rem;
+    --radius-1.25: 1.25rem;
+    --radius-1.88: 1.88rem;
 }
 @utility container {
-  margin-inline: auto;
-  padding-inline: 1.2rem;
-  /*
+    margin-inline: auto;
+    padding-inline: 1.2rem;
+    @variant xl {
+        padding-inline: 0;
+    }
+    /*
    @variant sm {
     padding-inline: 20px;
   }
@@ -52,17 +56,81 @@
     padding-inline: 80px;
   }
   
-  @variant xl {
-    padding-inline: 120px;
-  }
+  
     */
 }
 html {
-  @apply font-gotham font-normal text-base text-black;   
+    @apply font-gotham text-base font-normal text-black;
 }
 .main-menu-item {
-  @apply relative text-white lg:text-black;
+    @apply relative text-white lg:text-black;
 }
 .main-menu-item.has-submenu.menu-item-clicked .main-submenu {
-  @apply block mt-2;
+    @apply mt-2 block;
+}
+
+.tail {
+    --tail-hight: 23px;
+    --tail-color: var(--color-my-blue);
+}
+.tail::after {
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+}
+.tail--down::after {
+    border-left: var(--tail-hight) solid transparent;
+    border-right: var(--tail-hight) solid transparent;
+    border-top: var(--tail-hight) solid var(--tail-color);
+    top: 100%;
+    left: calc(50% - var(--tail-hight));
+}
+.tail--right::after {
+    border-top: var(--tail-hight) solid transparent;
+    border-left: var(--tail-hight) solid var(--tail-color);
+    border-bottom: var(--tail-hight) solid transparent;
+    left: 100%;
+    top: calc(50% - var(--tail-hight));
+}
+.tail--left::after {
+    border-top: var(--tail-hight) solid transparent;
+    border-right: var(--tail-hight) solid var(--tail-color);
+    border-bottom: var(--tail-hight) solid transparent;
+    right: 100%;
+    top: calc(50% - var(--tail-hight));
+}
+.md-tail--left::after {
+    @media (width >= 768px) {
+        border-top: var(--tail-hight) solid transparent;
+        border-right: var(--tail-hight) solid var(--tail-color);
+        border-left: none;
+        border-bottom: var(--tail-hight) solid transparent;
+        right: 100%;
+        left: auto;
+        top: calc(50% - var(--tail-hight));
+    }
+}
+.md-tail--right::after {
+    @media (width >= 768px) {
+        border-top: var(--tail-hight) solid transparent;
+        border-left: var(--tail-hight) solid var(--tail-color);
+        border-right: none;
+        border-bottom: var(--tail-hight) solid transparent;
+        left: 100%;
+        right: auto;
+        top: calc(50% - var(--tail-hight));
+    }
+}
+.md-tail--top::after {
+    @media (width >= 768px) {
+        border-top: none;
+        border-left: var(--tail-hight) solid transparent;
+        border-right: var(--tail-hight) solid transparent;
+        border-bottom: var(--tail-hight) solid var(--tail-color);
+        top: auto;
+        bottom: 100%;
+        left: calc(50% - var(--tail-hight));
+    }
 }

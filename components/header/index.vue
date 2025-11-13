@@ -110,16 +110,16 @@
 				<ul
 					class="flex flex-col justify-between gap-y-3 lg:flex-row lg:flex-wrap lg:gap-x-12 lg:gap-y-2.5 lg:pt-4 lg:pl-11 xl:gap-x-0 xl:p-0">
 					<li
-						v-for="item in menuItems"
-						:key="item.id"
+						v-for="(item, key) in PublicRoutes"
+						:key="key"
 						class="main-menu-item"
 						:class="{ 'has-submenu': item.submenu }"
 						@click="menuItemClick">
-						<a href="" class="hover:text-my-yellow text-sm font-medium uppercase">{{ item.name }}</a>
+						<NuxtLink :to="item.url" class="hover:text-my-yellow text-sm font-medium uppercase">{{ item.name }}</NuxtLink>
 						<IconDown v-if="item.submenu" class="absolute top-1.5 right-0 inline w-3 lg:static lg:ml-1" />
 						<div v-if="item.submenu" class="main-submenu hidden lg:absolute lg:z-10 lg:bg-white">
 							<ul class="flex flex-col gap-y-1.5">
-								<li v-for="subitem in item.submenu" :key="subitem.id">
+								<li v-for="(subitem, key) in item.submenu" :key="key">
 									<a href="" class="hover:text-my-yellow text-xs font-medium uppercase">{{
 										subitem.name
 									}}</a>
@@ -145,6 +145,7 @@
 
 <script setup lang="ts">
 import { onClickOutside } from "@vueuse/core";
+import { PublicRoutes } from '@/data';
 
 const showMenuMobile = ref(false);
 const MainMenuContainer = useTemplateRef("MainMenu");
@@ -181,29 +182,5 @@ const menuItemClick = (e: Event) => {
 
 const closeAllSubmenu = () =>
 	document.querySelectorAll(".main-menu-item").forEach((m) => m.classList.remove(clickedItemClass));
-const menuItems = [
-	{ id: 0, name: "ГЛАВНАЯ" },
-	{ id: 1, name: "О PRILIPLO" },
-	{ id: 2, name: "БИЗНЕСУ" },
-	{ id: 3, name: "Автовладельцам" },
-	{
-		id: 4,
-		name: "АКЦИИ",
-		submenu: [
-			{ id: 0, name: "Авто" },
-			{ id: 1, name: "Здоровье" },
-			{ id: 2, name: "Красота" },
-			{ id: 3, name: "Обучение" },
-			{ id: 4, name: "Развлечения" },
-			{ id: 5, name: "Кафе и рестораны" },
-			{ id: 6, name: "Разное" },
-		],
-	},
-	{ id: 5, name: "автомобили" },
-	{ id: 6, name: "Условия участия" },
-	{ id: 7, name: "Условия участия" },
-	{ id: 8, name: "вОПРОС/ОТВЕТ" },
-	{ id: 9, name: "ДОКУМЕНТЫ" },
-	{ id: 10, name: "КОНТАКТЫ" },
-];
+
 </script>
