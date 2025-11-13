@@ -15,6 +15,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+      
+      - name: Create .env file
+        run: |
+            touch .env
+            echo "${{secrets.TEST_SECRETS}}" >> .env
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
@@ -29,4 +34,4 @@ jobs:
           push: true
           tags: hpa777/priliplo-front:latest
           build-args: |
-            NODE_ENV=production # Важно для production сборки Nuxt
+            NODE_ENV=production

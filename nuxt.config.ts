@@ -1,10 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from "@tailwindcss/vite";
-import * as dotenv from 'dotenv';
-dotenv.config();
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
-  devtools: { enabled: true },
+  ...(process.env.NODE_ENV === 'development' && {
+    // Development-specific configurations
+    devtools: { enabled: true },
+    // More development-specific settings...
+  }),
   debug: false,
   css: [
     '~/assets/css/global.css'
@@ -14,15 +16,15 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
-  /*
+  
   runtimeConfig: {
     public: {
-      apiUrl: process.env.API_URL
+      apiUrl: ''
     }
-  }, */
+  }, 
   modules: ['vue-yandex-maps/nuxt', '@nuxt/eslint', '@nuxtjs/i18n', "@pinia/nuxt"],
   yandexMaps: {
-    apikey: process.env.YA_MAP_KEY,
+    apikey: process.env.NUXT_PUBLIC_YA_MAP_KEY,
   },  
   i18n: {
     locales: [
@@ -32,15 +34,8 @@ export default defineNuxtConfig({
   },
   nitro: {
     routeRules: {
-      '/media/**' : { proxy: process.env.MEDIA_URL },
-      '/api/**' : { proxy: process.env.API_URL }
-    }
-  },
-  app: {
-    head: {
-      htmlAttrs: {
-        lang: 'ru'
-      }
+      '/media/**' : { proxy: process.env.NUXT_MEDIA_URL },
+      '/api/**' : { proxy: process.env.NUXT_PUBLIC_API_URL }
     }
   }    
 })
