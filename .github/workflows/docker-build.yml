@@ -27,7 +27,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: hpa777/priliplo-front:latest
           build-args: |
             NODE_ENV=production # Важно для production сборки Nuxt
