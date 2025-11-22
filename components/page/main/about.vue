@@ -35,7 +35,7 @@
                         <div class="flex flex-col items-center">
                             <div class="about-item__img relative flex aspect-square w-[87%] px-4 xl:w-full xl:px-[8.2%]">
                                 <img :src="slide.img" alt="" class="m-auto h-full w-full rounded-full object-contain" />
-                                <img src="/images/car-photo-border.png" alt="" class="absolute inset-0 w-full" />
+                                <img src="/images/page/main/car-photo-border.png" alt="" class="absolute inset-0 w-full" />
                             </div>
                             <div class="xl:flex xl:items-start xl:pt-[1.1rem] xl:px-[1.4rem] xl:gap-x-10">
                                 <div class="flex h-24 shrink-0 md:mt-5 xl:mt-0 xl:h-auto">

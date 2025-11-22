@@ -4,8 +4,8 @@
 			class="relative container flex items-start justify-between pt-[1.2rem] md:gap-x-0 md:pt-[1.9rem] lg:grid lg:grid-cols-[4.7rem_1fr] lg:gap-y-5 lg:pt-5 xl:gap-x-16 xl:px-0 xl:pt-[3.2rem]">
 			<NuxtLink to="/" class="flex-shrink-0 lg:row-start-2 xl:row-span-2 xl:row-start-1">
 				<picture>
-					<source srcset="/images/logo.png" media="(min-width: 768px)" />
-					<img src="/images/logo_sm.png" alt="" />
+					<source srcset="/images/layout/logo.png" media="(min-width: 768px)" />
+					<img src="/images/layout/logo_sm.png" alt="" />
 				</picture>
 			</NuxtLink>
 

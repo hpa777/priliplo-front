@@ -8,7 +8,7 @@ export const PublicRoutes: Route[] = [
 	{ name: "ГЛАВНАЯ", url: '/' },
 	{ name: "О PRILIPLO", url : '/about' },
 	{ name: "БИЗНЕСУ", url : '/business' },
-	{ name: "Автовладельцам" },
+	{ name: "Автовладельцам", url: '/driver' },
 	{		
 		name: "АКЦИИ",
 		submenu: [

@@ -1,5 +1,5 @@
 <template>
-    <div class="xl:bg-[url(/images/index_video_bg_xl.png)] xl:bg-contain xl:bg-center xl:bg-no-repeat">
+    <div class="xl:bg-[url(/images/page/main/index_video_bg_xl.png)] xl:bg-contain xl:bg-center xl:bg-no-repeat">
         <div class="container pt-[3.8rem]">
             <h2 class="text-my-yellow text-center text-3xl font-black md:text-[2.12rem] xl:text-left xl:text-[2.81rem]">АКТУАЛЬНОЕ ВИДЕО</h2>
             <div class="relative lg:mt-9 lg:px-16">

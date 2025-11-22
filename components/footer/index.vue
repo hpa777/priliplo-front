@@ -2,17 +2,17 @@
     <div class="bg-my-gray mt-6 sm:mt-16 xl:mt-[6.5rem]">
         <div>
             <picture>
-                <source srcset="/images/footer-xl.png" media="(min-width: 1396px)" />
-                <source srcset="/images/footer-lg.png" media="(min-width: 960px)" />
-                <source srcset="/images/footer-md.png" media="(min-width: 768px)" />
-                <source srcset="/images/footer-sm.png" media="(min-width: 480px)" />
-                <img src="/images/footer-mob.png" alt="" class="w-full" />
+                <source srcset="/images/layout/footer-xl.png" media="(min-width: 1396px)" />
+                <source srcset="/images/layout/footer-lg.png" media="(min-width: 960px)" />
+                <source srcset="/images/layout/footer-md.png" media="(min-width: 768px)" />
+                <source srcset="/images/layout/footer-sm.png" media="(min-width: 480px)" />
+                <img src="/images/layout/footer-mob.png" alt="" class="w-full" />
             </picture>
         </div>
         <footer class="relative container pt-[1.7rem] pb-[3.8rem] sm:pt-10 md:pt-[3.7rem] lg:pt-8 xl:flex xl:gap-x-7 xl:pt-3.5 xl:pb-[4.6rem] xl:pl-[8.8rem]">
             <div class="flex-col-reverse sm:flex xl:flex-row xl:gap-x-[8.8rem]">
                 <a href="" class="float-right w-24 sm:float-none md:w-auto xl:shrink-0">
-                    <img src="/images/logo-footer.png" alt="" />
+                    <img src="/images/layout/logo-footer.png" alt="" />
                 </a>
                 <ul class="mb-[1.9rem] space-y-[0.5rem] text-lg sm:w-[22rem] sm:columns-2 md:w-[36rem] md:columns-3 md:text-xl xl:w-auto xl:columns-2 xl:pt-[1.1rem]">
                     <li><a href="">Наша команда</a></li>

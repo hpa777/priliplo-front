@@ -40,6 +40,7 @@
 
     --radius-1.25: 1.25rem;
     --radius-1.88: 1.88rem;
+    
 }
 @utility container {
     margin-inline: auto;
@@ -72,6 +73,9 @@ html {
 .tail {
     --tail-hight: 23px;
     --tail-color: var(--color-my-blue);
+}
+.tail--yellow {  
+  --tail-color: var(--color-my-yellow);
 }
 .tail::after {
     content: '';

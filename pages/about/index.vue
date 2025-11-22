@@ -3,7 +3,7 @@
         <UiBreadCrumb :chain="[{name: 'О PRILIPLO'}]"></UiBreadCrumb>
         <!-- banner -->
         <div 
-            class="mt-5 bg-[url(/images/about_banner_bg.png)] bg-size-[100%_auto] bg-bottom bg-no-repeat md:mt-7 md:bg-[url(/images/about_banner_bg_md.png)] md:bg-auto md:bg-top-right xl:mt-[2.4rem] xl:bg-[url(/images/about_banner_bg_xl.png)] xl:bg-position-[49.5vw_0]">
+            class="mt-5 bg-[url(/images/page/about/about_banner_bg.png)] bg-size-[100%_auto] bg-bottom bg-no-repeat md:mt-7 md:bg-[url(/images/page/about/about_banner_bg_md.png)] md:bg-auto md:bg-top-right xl:mt-[2.4rem] xl:bg-[url(/images/page/about/about_banner_bg_xl.png)] xl:bg-position-[49.5vw_0]">
             <div class="container pb-[59vw] sm:pb-[61.2vw] md:pr-[11.7rem] md:pb-0 lg:pb-32 lg:pr-[23.9rem] xl:pr-[46.2rem] xl:pb-36">
                 <h1 class="bg-my-yellow rounded-1.25 mb-4 px-[3.1rem] py-[0.7rem] text-center text-[1.94rem] leading-[1.2] font-bold uppercase sm:px-4 sm:py-3 md:mb-5 md:px-7 md:py-6 md:text-left md:text-[2.5rem] xl:px-[4.4rem]">
                     Реклама по бартеру в системе PRiLiPLO
@@ -28,8 +28,11 @@
                 </div>
             </div>
         </div>
-
+        <!--/banner -->
+        <UiSectionTitle class="text-center xl:text-left">УЧАСТНИКИ:</UiSectionTitle>
         <PageAboutMembers></PageAboutMembers>
+
+        <UiSectionTitle class="text-center xl:text-left">АКТУАЛЬНОЕ ВИДЕО:</UiSectionTitle>
         <PageAboutVideo></PageAboutVideo>
     </div>
 </template>

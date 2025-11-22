@@ -1,6 +1,8 @@
 <template>
     <div>
         <UiBreadCrumb :chain="[{ name: 'Бизнесу' }]"></UiBreadCrumb>
+
+        <!--block1-->
         <div class="container mt-5 md:mt-7 xl:mt-[2.4rem]">
             <div class="flex flex-col gap-y-4 xl:flex-row xl:gap-x-16">
                 <h1
@@ -13,7 +15,7 @@
                 </p>
             </div>
         </div>
-        <div class="mt-[1.6rem] bg-[url(/images/business_bl1_bg.png)] bg-size-[100%_auto] bg-bottom bg-no-repeat pb-[3.8rem] lg:bg-[url(/images/business_bl1_bg_lg.png)] xl:pb-[5.8rem]">
+        <div class="mt-[1.6rem] bg-[url(/images/page/business/business_bl1_bg.png)] bg-size-[100%_auto] bg-bottom bg-no-repeat pb-[3.8rem] lg:bg-[url(/images/page/business/business_bl1_bg_lg.png)] xl:pb-[5.8rem]">
             <div class="container lg:flex xl:mt-14">
                 <div class="rounded-1.88 border-my-blue overflow-hidden border-4 bg-white lg:basis-1/3">
                     <div
@@ -21,7 +23,7 @@
                         Наружная реклама
                         <div
                             class="border-my-blue absolute -top-[3px] -right-[1px] flex h-[3.6rem] w-[3.6rem] rounded-full border-4 bg-white p-[0.2rem] md:w-[4.2rem] lg:static lg:h-[3.8rem] lg:w-[3.8rem] lg:shrink-0 xl:absolute xl:top-1.5 xl:right-3 xl:h-[7.6rem] xl:w-[7.6rem]">
-                            <img src="/images/business_bl1_ico1.svg" alt="" class="m-auto" />
+                            <img src="/images/page/business/business_bl1_ico1.svg" alt="" class="m-auto" />
                         </div>
                     </div>
                     <div class="px-4 py-5 text-sm md:text-base xl:py-12 xl:text-[1.44rem] xl:leading-[1.52]">
@@ -36,7 +38,7 @@
                         Сарафанное радио
                         <div
                             class="border-my-blue absolute -top-[3px] -right-[1px] flex h-[3.6rem] w-[3.6rem] rounded-full border-4 bg-white p-[0.2rem] md:w-[4.2rem] lg:static lg:h-[3.8rem] lg:w-[3.8rem] lg:shrink-0 xl:absolute xl:top-1.5 xl:right-3 xl:h-[7.6rem] xl:w-[7.6rem]">
-                            <img src="/images/business_bl1_ico2.svg" alt="" class="m-auto" />
+                            <img src="/images/page/business/business_bl1_ico2.svg" alt="" class="m-auto" />
                         </div>
                     </div>
                     <div class="px-4 py-5 text-sm md:text-base xl:py-12 xl:text-[1.44rem] xl:leading-[1.52]">
@@ -51,7 +53,7 @@
                         Имидж и доверие
                         <div
                             class="border-my-blue absolute -top-[3px] -right-[1px] flex h-[3.6rem] w-[3.6rem] rounded-full border-4 bg-white p-[0.2rem] md:w-[4.2rem] lg:static lg:h-[3.8rem] lg:w-[3.8rem] lg:shrink-0 xl:absolute xl:top-1.5 xl:right-3 xl:h-[7.6rem] xl:w-[7.6rem]">
-                            <img src="/images/business_bl1_ico3.svg" alt="" class="m-auto" />
+                            <img src="/images/page/business/business_bl1_ico3.svg" alt="" class="m-auto" />
                         </div>
                     </div>
                     <div class="px-4 py-5 text-sm md:text-base xl:pt-5 xl:pb-1.5 xl:text-[1.44rem] xl:leading-[1.52]">
@@ -61,20 +63,20 @@
                 </div>
             </div>
         </div>
-
-        <div class="container mt-[3.6rem] xl:mt-[3.1rem]">
-            <h2 class="text-my-yellow mb-3.5 text-center text-3xl font-black uppercase xl:text-[2.93rem]">Инструмент маркетолога нового поколения</h2>
-            <p class="text-center text-sm lg:text-lg xl:text-left xl:text-[1.44rem]">
-                <span class="font-bold">PRiLiPLO</span> — это бонусная система лояльности нового поколения, а также рабочий инструмент для привлечения, возврата и удержания клиентов Вашего бизнеса.
-            </p>
-        </div>
+        <!--/block1-->
+        
+        <!--block2-->
+        <UiSectionTitle class="text-center">
+            <template #default>Инструмент маркетолога нового поколения</template>
+            <template #subtitle><span class="font-bold">PRiLiPLO</span> — это бонусная система лояльности нового поколения, а также рабочий инструмент для привлечения, возврата и удержания клиентов Вашего бизнеса.</template>
+        </UiSectionTitle>
 
         <div class="mt-7 bg-[#eaeaea] pb-0.5 md:relative md:pb-0">
-            <img src="/images/business_bl2_bg.jpg" alt="" class="hidden md:block md:w-full" />
+            <img src="/images/page/business/business_bl2_bg.jpg" alt="" class="hidden md:block md:w-full" />
             <div class="md:absolute md:inset-0">
                 <div class="md:container md:flex md:h-1/4 md:items-center md:gap-x-[6.4vw]">
                     <div class="min-w-1/2 shrink-0">
-                        <img src="/images/business_bl2_img1.jpg" alt="" class="w-full md:hidden" />
+                        <img src="/images/page/business/business_bl2_img1.jpg" alt="" class="w-full md:hidden" />
                     </div>
                     <div class="container mt-3 mb-5 md:m-0 md:p-0">
                         <h3 class="text-my-blue mb-2 text-lg font-bold md:text-xl xl:text-[2.81rem] xl:mb-8 xl:leading-[1.1]">Система лояльности</h3>
@@ -86,7 +88,7 @@
                 </div>
                 <div class="md:container md:flex md:h-1/4 md:flex-row-reverse md:items-center md:gap-x-[6.4vw]">
                     <div class="min-w-1/2 shrink-0">
-                        <img src="/images/business_bl2_img2.jpg" alt="" class="w-full md:hidden" />
+                        <img src="/images/page/business/business_bl2_img2.jpg" alt="" class="w-full md:hidden" />
                     </div>
                     <div class="container mt-3 mb-5 md:m-0 md:p-0">
                         <h3 class="text-my-blue mb-2 text-lg font-bold md:text-xl xl:text-[2.81rem] xl:mb-8 xl:leading-[1.1]">Бонусная программа</h3>
@@ -99,7 +101,7 @@
                 </div>
                 <div class="md:container md:flex md:h-1/4 md:items-center md:gap-x-[6.4vw]">
                     <div class="min-w-1/2 shrink-0">
-                        <img src="/images/business_bl2_img3.jpg" alt="" class="w-full md:hidden" />
+                        <img src="/images/page/business/business_bl2_img3.jpg" alt="" class="w-full md:hidden" />
                     </div>
                     <div class="container mt-3 mb-5 md:m-0 md:p-0">
                         <h3 class="text-my-blue mb-2 text-lg font-bold md:text-xl xl:text-[2.81rem] xl:mb-8 xl:leading-[1.1]">Привлечение клиентов</h3>
@@ -111,7 +113,7 @@
                 </div>
                 <div class="md:container md:flex md:h-1/4 md:flex-row-reverse md:items-center md:gap-x-[2.6vw] lg:gap-x-[6.4vw]">
                     <div class="min-w-1/2 shrink-0">
-                        <img src="/images/business_bl2_img4.jpg" alt="" class="w-full md:hidden" />
+                        <img src="/images/page/business/business_bl2_img4.jpg" alt="" class="w-full md:hidden" />
                     </div>
                     <div class="container mt-3 mb-5 md:m-0 md:p-0">
                         <h3 class="text-my-blue mb-2 text-lg font-bold md:text-xl xl:text-[2.81rem] xl:mb-8 xl:leading-[1.1]">Возврат и удержание клиентов</h3>
@@ -126,16 +128,18 @@
                 </div>
             </div>
         </div>
+        <!--/block2-->
 
-        <div class="container mt-[3.6rem] xl:mt-[3.1rem]">
-            <h2 class="text-my-yellow mb-3.5 text-center text-3xl font-black uppercase xl:text-[2.93rem]">как это работает?</h2>
-            <p class="text-center text-sm lg:text-lg xl:text-[1.44rem]">Что бы начать раскручивать свой бизнес и продвигать товары или услуги в системе PRiLiPLO, достаточно:</p>
-        </div>
+        <!--block map-->        
+        <UiSectionTitle class="text-center">
+            <template #default>как это работает?</template>
+            <template #subtitle>Что бы начать раскручивать свой бизнес и продвигать товары или услуги в системе PRiLiPLO, достаточно:</template>
+        </UiSectionTitle>
         <PageBusinessRoad />
+        <!--/block map-->
 
-        <div class="container mt-[3.6rem] xl:mt-[3.1rem]">
-            <h2 class="text-my-yellow mb-3.5 text-center text-3xl font-black uppercase xl:text-[2.93rem]">Остальную работу возьмёт на себя сервис PRiLiPLO</h2>
-        </div>
+        <!--block3-->
+        <UiSectionTitle class="text-center">Остальную работу возьмёт на себя сервис PRiLiPLO</UiSectionTitle>        
 
         <div class="container mt-7 xl:flex xl:flex-row-reverse xl:mt-0 xl:items-center xl:gap-x-11">
             <ul class="space-y-3.5 text-sm md:text-lg xl:text-[1.44rem] xl:leading-normal xl:space-y-11">
@@ -152,7 +156,7 @@
                     <div>Предоставит начальный фотоотчёт оклеенного автомобиля в личный кабинет организации</div>
                 </li>
             </ul>
-            <img class="w-full md:-mt-[5.4rem] xl:w-[42.5rem] xl:mt-0 xl:-ml-[7.4rem]" src="/images/business_bl3_img.png" alt="" />
+            <img class="w-full md:-mt-[5.4rem] xl:w-[42.5rem] xl:mt-0 xl:-ml-[7.4rem]" src="/images/page/business/business_bl3_img.png" alt="" />
         </div>
         <div class="container mt-10 space-y-2.5 text-sm md:mt-5 md:space-y-5 md:text-lg xl:text-[1.44rem] xl:mt-12">
             <p>
@@ -161,5 +165,7 @@
             </p>
             <p><span class="text-my-blue font-bold">Отчет автоматически поступает рекламодателю в личный кабинет.</span> В случае принятия отчета бонусы начисляются, в случае отклонения — не начисляются.</p>
         </div>
+        <!--/block3-->
+
     </div>
 </template>

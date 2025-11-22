@@ -3,16 +3,16 @@
     <div class="bg-my-gray relative">
         <div class="container grid grid-cols-2 gap-x-4 gap-y-[1.4rem] py-[3.8rem] md:px-10 lg:px-[8.7rem] xl:relative xl:grid-cols-4 xl:gap-x-5 xl:px-0 xl:pt-[3.6rem] xl:pb-[6.3rem]">
             <picture class="absolute -top-[5.5rem] right-0 sm:-top-[6.7rem] sm:-right-[1.7rem] md:right-0 xl:-top-16 xl:-right-[11.3rem]">
-                <source srcset="/images/coin21-xl.png" media="(min-width: 1396px)" />
-                <source srcset="/images/coin21-md.png" media="(min-width: 768px)" />
-                <img src="/images/coin22.png" alt="" />
+                <source srcset="/images/page/main/coin21-xl.png" media="(min-width: 1396px)" />
+                <source srcset="/images/page/main/coin21-md.png" media="(min-width: 768px)" />
+                <img src="/images/page/main/coin22.png" alt="" />
             </picture>
             <picture class="absolute top-52 left-0 hidden sm:block md:top-60 xl:hidden">
-                <img src="/images/coin32.png" alt="" />
+                <img src="/images/page/main/coin32.png" alt="" />
             </picture>
             <picture class="absolute top-[43.4rem] right-0 hidden sm:block xl:top-[22rem] xl:-right-16">
-                <source srcset="/images/coin11-xl.png" media="(min-width: 1396px)" />
-                <img src="/images/coin21-sm.png" alt="" />
+                <source srcset="/images/page/main/coin11-xl.png" media="(min-width: 1396px)" />
+                <img src="/images/page/main/coin21-sm.png" alt="" />
             </picture>
             <h2 class="bg-my-blue rounded-1.25 relative col-span-2 mx-auto flex h-[5.25rem] w-80 max-w-full items-center justify-center gap-x-6 text-white xl:col-span-1 xl:row-span-2 xl:mt-[4.8rem]">
                 <div class="bg-my-blue absolute top-0 right-full -mr-4 hidden h-full w-[100rem] xl:block"></div>
@@ -33,25 +33,25 @@
                 <p class="text-my-blue text-center text-3xl font-black uppercase md:mb-4 md:text-[2.5rem] xl:mt-16 xl:text-[2.8rem]">1 бонус = 1 <span class="font-bold">₽</span></p>
             </div>
             <div
-                class="z-10 flex flex-col items-center bg-[url(/images/index_info_item_bg.png)] bg-size-[100%_100%] bg-center bg-no-repeat px-0.5 py-4 text-center sm:px-[1.4rem] sm:pt-8 sm:pb-10 md:py-[3.8rem] xl:px-4 xl:pb-[4.2rem]">
+                class="z-10 flex flex-col items-center bg-[url(/images/page/main/index_info_item_bg.png)] bg-size-[100%_100%] bg-center bg-no-repeat px-0.5 py-4 text-center sm:px-[1.4rem] sm:pt-8 sm:pb-10 md:py-[3.8rem] xl:px-4 xl:pb-[4.2rem]">
                 <div class="text-my-blue text-3xl font-bold sm:text-[2.4rem] md:text-6xl">234 333</div>
                 <div class="mt-1 text-sm md:mt-4 md:px-4 md:text-[1.44rem]">заработанных бонусных балла</div>
                 <a href="#" class="text-my-blue mt-3.5 text-sm underline sm:mt-6 sm:font-medium md:mt-[2.1rem] md:text-[1.44rem]">Подробнее</a>
             </div>
             <div
-                class="z-10 flex flex-col items-center bg-[url(/images/index_info_item_bg.png)] bg-size-[100%_100%] bg-center bg-no-repeat px-0.5 py-4 text-center sm:px-[1.4rem] sm:pt-8 sm:pb-10 md:py-[3.8rem] xl:px-4 xl:pb-[4.2rem]">
+                class="z-10 flex flex-col items-center bg-[url(/images/page/main/index_info_item_bg.png)] bg-size-[100%_100%] bg-center bg-no-repeat px-0.5 py-4 text-center sm:px-[1.4rem] sm:pt-8 sm:pb-10 md:py-[3.8rem] xl:px-4 xl:pb-[4.2rem]">
                 <div class="text-my-blue text-3xl font-bold sm:text-[2.4rem] md:text-6xl">200 234</div>
                 <div class="mt-1 text-sm md:mt-4 md:px-4 md:text-[1.44rem]">потраченных бонусных балла</div>
                 <a href="#" class="text-my-blue mt-3.5 text-sm underline sm:mt-6 sm:font-medium md:mt-[2.1rem] md:text-[1.44rem]">Подробнее</a>
             </div>
             <div
-                class="z-10 flex flex-col items-center bg-[url(/images/index_info_item_bg.png)] bg-size-[100%_100%] bg-center bg-no-repeat px-0.5 py-4 text-center sm:px-[1.4rem] sm:pt-8 sm:pb-10 md:py-[3.8rem] xl:px-4 xl:pb-[4.2rem]">
+                class="z-10 flex flex-col items-center bg-[url(/images/page/main/index_info_item_bg.png)] bg-size-[100%_100%] bg-center bg-no-repeat px-0.5 py-4 text-center sm:px-[1.4rem] sm:pt-8 sm:pb-10 md:py-[3.8rem] xl:px-4 xl:pb-[4.2rem]">
                 <div class="text-my-blue text-3xl font-bold sm:text-[2.4rem] md:text-6xl">1 653</div>
                 <div class="mt-1 text-sm md:mt-4 md:px-4 md:text-[1.44rem]">участников автомобилей</div>
                 <a href="#" class="text-my-blue mt-3.5 text-sm underline sm:mt-6 sm:font-medium md:mt-[2.1rem] md:text-[1.44rem]">Подать заявку</a>
             </div>
             <div
-                class="z-10 flex flex-col items-center bg-[url(/images/index_info_item_bg.png)] bg-size-[100%_100%] bg-center bg-no-repeat px-0.5 py-4 text-center sm:px-[1.4rem] sm:pt-8 sm:pb-10 md:py-[3.8rem] xl:px-4 xl:pb-[4.2rem]">
+                class="z-10 flex flex-col items-center bg-[url(/images/page/main/index_info_item_bg.png)] bg-size-[100%_100%] bg-center bg-no-repeat px-0.5 py-4 text-center sm:px-[1.4rem] sm:pt-8 sm:pb-10 md:py-[3.8rem] xl:px-4 xl:pb-[4.2rem]">
                 <div class="text-my-blue text-3xl font-bold sm:text-[2.4rem] md:text-6xl">233</div>
                 <div class="item__txt--cst mt-1 text-sm md:mt-4 md:px-4 md:text-[1.44rem]">автомобилей требуется для участия</div>
                 <a href="#" class="text-my-blue mt-1.5 text-sm underline sm:mt-6 sm:font-medium md:mt-[2.1rem] md:text-[1.44rem]">Участвовать</a>
@@ -69,16 +69,16 @@
         </div>
     </div>
     <!-- for business-->
-    <div class="relative bg-[url(/images/index_info_bg.png)] bg-my-blue bg-no-repeat bg-bottom bg-contain xl:bg-[url(/images/index_info_bg_xl.png)]">
+    <div class="relative bg-[url(/images/page/main/index_info_bg.png)] bg-my-blue bg-no-repeat bg-bottom bg-contain xl:bg-[url(/images/page/main/index_info_bg_xl.png)]">
         <picture class="absolute -top-[2.6rem] left-0 sm:-top-[17.8rem] md:-top-[8.8rem] xl:-top-[20.3rem]">
-            <source srcset="/images/coin31-xl.png" media="(min-width: 1780px)" />
-            <source srcset="/images/coin32-md.png" media="(min-width: 768px)" />
-            <source srcset="/images/coin31-sm.png" media="(min-width: 480px)" />
-            <img src="/images/coin31.png" alt="" />
+            <source srcset="/images/page/main/coin31-xl.png" media="(min-width: 1780px)" />
+            <source srcset="/images/page/main/coin32-md.png" media="(min-width: 768px)" />
+            <source srcset="/images/page/main/coin31-sm.png" media="(min-width: 480px)" />
+            <img src="/images/page/main/coin31.png" alt="" />
         </picture>
         <div class="container grid grid-cols-2 gap-x-4 gap-y-[1.4rem] py-[3.8rem] md:px-10 lg:px-[8.7rem] xl:relative xl:grid-cols-4 xl:gap-x-5 xl:px-0 xl:pb-[6.3rem]">
             <picture class="absolute -top-[4.3rem] right-0 hidden sm:block md:hidden">
-                <img src="/images/coin33-sm.png" alt="" />
+                <img src="/images/page/main/coin33-sm.png" alt="" />
             </picture>
             <h2 class="rounded-1.25 text-my-blue relative col-span-2 mx-auto flex h-[5.25rem] w-80 max-w-full items-center justify-center gap-x-6 bg-white xl:col-span-1 xl:row-span-2 xl:mt-[4.5rem]">
                 <div class="absolute top-0 right-full -mr-4 hidden h-full w-[100rem] bg-white xl:block"></div>
@@ -106,22 +106,22 @@
                 <p class="text-my-yellow text-center text-[1.56rem] leading-[1.4] font-black uppercase md:text-3xl xl:text-left xl:font-bold">реклама про которую говорят, видят и рекомендуют!</p>
             </div>
 
-            <div class="flex flex-col items-center bg-[url(/images/index_info_item_bg.jpg)] bg-size-[100%_100%] bg-center bg-no-repeat px-0.5 py-3 text-center sm:px-[1.4rem] sm:pt-9 sm:pb-[1.4rem] md:py-[3.8rem] xl:px-4">
+            <div class="flex flex-col items-center bg-[url(/images/page/main/index_info_item_bg.jpg)] bg-size-[100%_100%] bg-center bg-no-repeat px-0.5 py-3 text-center sm:px-[1.4rem] sm:pt-9 sm:pb-[1.4rem] md:py-[3.8rem] xl:px-4">
                 <div class="text-my-blue text-3xl font-bold sm:text-4xl sm:leading-[1.3] md:text-6xl">150</div>
                 <div class="mt-1 text-sm md:px-4 md:text-[1.44rem]">компаний <br />участников</div>
                 <a href="#" class="text-my-blue mt-3.5 text-sm underline sm:mt-6 sm:font-medium md:mt-[2.1rem] md:text-[1.44rem]">Подать заявку</a>
             </div>
-            <div class="flex flex-col items-center bg-[url(/images/index_info_item_bg.jpg)] bg-size-[100%_100%] bg-center bg-no-repeat px-0.5 py-3 text-center sm:px-[1.4rem] sm:pt-9 sm:pb-[1.4rem] md:py-[3.8rem] xl:px-4">
+            <div class="flex flex-col items-center bg-[url(/images/page/main/index_info_item_bg.jpg)] bg-size-[100%_100%] bg-center bg-no-repeat px-0.5 py-3 text-center sm:px-[1.4rem] sm:pt-9 sm:pb-[1.4rem] md:py-[3.8rem] xl:px-4">
                 <div class="text-my-blue text-3xl font-bold sm:text-4xl sm:leading-[1.3] md:text-6xl">365</div>
                 <div class="mt-1 text-sm md:text-[1.44rem]">запущено рекламных акций</div>
                 <a href="#" class="text-my-blue mt-3.5 text-sm underline sm:mt-6 sm:font-medium md:mt-[2.1rem] md:text-[1.44rem]">Рекламодатели и акции</a>
             </div>
-            <div class="flex flex-col items-center bg-[url(/images/index_info_item_bg.jpg)] bg-size-[100%_100%] bg-center bg-no-repeat px-0.5 py-3 text-center sm:px-[1.4rem] sm:pt-9 sm:pb-[2.8rem] md:py-[3.8rem] xl:px-4">
+            <div class="flex flex-col items-center bg-[url(/images/page/main/index_info_item_bg.jpg)] bg-size-[100%_100%] bg-center bg-no-repeat px-0.5 py-3 text-center sm:px-[1.4rem] sm:pt-9 sm:pb-[2.8rem] md:py-[3.8rem] xl:px-4">
                 <div class="text-my-blue text-3xl font-bold sm:text-4xl sm:leading-[1.3] md:text-6xl">1 434</div>
                 <div class="mt-1 text-sm md:text-[1.44rem]">автомобиля оклеено рекламой</div>
                 <a href="#" class="text-my-blue mt-3.5 text-sm underline sm:mt-6 sm:font-medium md:mt-[2.1rem] md:text-[1.44rem]">Смотреть участников</a>
             </div>
-            <div class="flex flex-col items-center bg-[url(/images/index_info_item_bg.jpg)] bg-size-[100%_100%] bg-center bg-no-repeat px-0.5 py-3 text-center sm:px-[1.4rem] sm:pt-9 sm:pb-[2.8rem] md:py-[3.8rem] xl:px-4">
+            <div class="flex flex-col items-center bg-[url(/images/page/main/index_info_item_bg.jpg)] bg-size-[100%_100%] bg-center bg-no-repeat px-0.5 py-3 text-center sm:px-[1.4rem] sm:pt-9 sm:pb-[2.8rem] md:py-[3.8rem] xl:px-4">
                 <div class="text-my-blue text-3xl leading-none font-bold sm:leading-[2.8rem] md:text-[3.25rem] md:leading-[4.7rem]">10 тыс./км</div>
                 <div class="mt-1 text-sm md:text-[1.44rem]">проехала <br />реклама</div>
                 <a href="#" class="text-my-blue mt-3.5 text-sm underline sm:mt-6 sm:font-medium md:mt-[2.1rem] md:text-[1.44rem]">Подробнее</a>
