@@ -11,6 +11,7 @@ export const PublicRoutes: Route[] = [
 	{ name: "Автовладельцам", url: '/driver' },
 	{		
 		name: "АКЦИИ",
+		url: '/actions',
 		submenu: [
 			{ name: "Авто" },
 			{ name: "Здоровье" },
