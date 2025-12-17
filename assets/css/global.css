@@ -37,24 +37,25 @@
     --color-my-yellow: #feb800;
     --color-my-blue: #367cb9;
     --color-my-gray: #eaeaea;
+    --color-my-green: #329730;
 
     --radius-1.25: 1.25rem;
     --radius-1.88: 1.88rem;
-    
 }
 @utility container {
     margin-inline: auto;
     padding-inline: 1.2rem;
+    @variant lg {
+        padding-inline: 2rem;
+    }
+
+    /*
     @variant xl {
         padding-inline: 0;
     }
-    /*
+   
    @variant sm {
     padding-inline: 20px;
-  }
-  
-  @variant lg {
-    padding-inline: 80px;
   }
   
   
@@ -66,16 +67,17 @@ html {
 .main-menu-item {
     @apply relative text-white lg:text-black;
 }
+
 .main-menu-item.has-submenu.menu-item-clicked .main-submenu {
-    @apply mt-2 block;
+    @apply block;
 }
 
 .tail {
     --tail-hight: 23px;
     --tail-color: var(--color-my-blue);
 }
-.tail--yellow {  
-  --tail-color: var(--color-my-yellow);
+.tail--yellow {
+    --tail-color: var(--color-my-yellow);
 }
 .tail::after {
     content: '';
