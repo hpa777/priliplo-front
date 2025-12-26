@@ -56,6 +56,22 @@ export interface paths {
         patch: operations["api_v1_campaigns_partial_update"];
         trace?: never;
     };
+    "/api/v1/faq/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: operations["api_v1_faq_list"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/v1/sliders/{slug}/": {
         parameters: {
             query?: never;
@@ -194,6 +210,17 @@ export interface components {
          * @enum {integer}
          */
         CampaignStatusEnum: 0 | 1 | 2 | 3 | 4 | 5;
+        Faq: {
+            readonly id: number;
+            /** Тип вопроса */
+            type?: components["schemas"]["TypeEnum"];
+            /** Сортировка */
+            rank?: number;
+            /** Вопрос */
+            question: string;
+            /** Ответ */
+            answer: string;
+        };
         PatchedCampaign: {
             readonly id?: number;
             /**
@@ -252,6 +279,10 @@ export interface components {
         };
         Slide: {
             readonly id: number;
+            readonly img: string;
+            readonly img_tablet: string;
+            readonly img_mob: string;
+            readonly icon: string;
             /** Заголовок */
             title: string;
             /** Текст */
@@ -260,26 +291,6 @@ export interface components {
             btn_text?: string;
             /** URL кнопки */
             btn_url?: string;
-            /**
-             * Картинка
-             * Format: uri
-             */
-            img: string;
-            /**
-             * Картинка для мобильных
-             * Format: uri
-             */
-            img_mob?: string;
-            /**
-             * Картинка для планшетов
-             * Format: uri
-             */
-            img_tablet?: string;
-            /**
-             * Иконка
-             * Format: uri
-             */
-            icon?: string;
             /** Сортировка */
             rank?: number;
             slider: number;
@@ -302,6 +313,12 @@ export interface components {
             readonly access: string;
             refresh: string;
         };
+        /**
+         * @description * `0` - Авто-владельцу
+         *     * `1` - Бизнесу
+         * @enum {integer}
+         */
+        TypeEnum: 0 | 1;
     };
     responses: never;
     parameters: never;
@@ -483,6 +500,25 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["Campaign"];
+                };
+            };
+        };
+    };
+    api_v1_faq_list: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["Faq"][];
                 };
             };
         };

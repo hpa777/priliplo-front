@@ -16,7 +16,7 @@
 <script lang="ts" setup>
 
 interface ChainItem {
-    name: string;
+    name?: string;
     url?: string;
 }
 interface Props {

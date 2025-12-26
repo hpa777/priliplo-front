@@ -109,12 +109,6 @@ import { onClickOutside } from '@vueuse/core'
 import { PublicRoutes } from '@/data'
 
 const route = useRoute()
-watch(
-    () => route.path,
-    (newPath, oldPath) => {
-        console.log(`Navigated from ${oldPath} to ${newPath}`)
-    }
-)
 
 const showMenuMobile = ref(false)
 watch(showMenuMobile, (v) => {

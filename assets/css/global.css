@@ -12,6 +12,12 @@
 }
 @font-face {
     font-family: 'GothamPro';
+    src: url('/fonts/gothampro_mediumitalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'GothamPro';
     src: url('/fonts/gothampro_bold.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
@@ -49,11 +55,11 @@
         padding-inline: 2rem;
     }
 
-    /*
+    
     @variant xl {
         padding-inline: 0;
     }
-   
+   /*
    @variant sm {
     padding-inline: 20px;
   }
