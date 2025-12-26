@@ -60,7 +60,7 @@
                                 <div class="text-sm leading-[1.2] font-medium lg:text-base xl:text-xl">Приём заявок</div>
                                 <div class="text-right text-sm leading-[1.2] font-medium lg:text-base xl:text-center xl:text-xl">до 31.05<br />2024</div>
                                 <div>
-                                    <IconCar class="max-w-full" />
+                                    <IconCar class="max-w-full text-my-blue" />
                                 </div>
                                 <div class="text-my-blue text-sm leading-[1.2] font-medium lg:text-base xl:text-xl">Машин требуется</div>
                                 <div class="text-my-blue text-right text-[1.56rem] font-medium sm:text-lg lg:text-[1.56rem] xl:text-center xl:text-3xl">25</div>
