@@ -56,6 +56,22 @@ export interface paths {
         patch: operations["api_v1_campaigns_partial_update"];
         trace?: never;
     };
+    "/api/v1/dictionary/{locale}/{context}/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: operations["api_v1_dictionary_list"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/v1/faq/": {
         parameters: {
             query?: never;
@@ -144,6 +160,8 @@ export interface paths {
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
+        /** @enum {unknown} */
+        BlankEnum: "";
         Campaign: {
             readonly id: number;
             /**
@@ -210,6 +228,28 @@ export interface components {
          * @enum {integer}
          */
         CampaignStatusEnum: 0 | 1 | 2 | 3 | 4 | 5;
+        /**
+         * @description * `vrn` - Воронеж
+         * @enum {string}
+         */
+        ContextEnum: "vrn";
+        Dictionary: {
+            readonly id: number;
+            /**
+             * Локаль (язык)
+             * @default ru
+             */
+            locale: components["schemas"]["LocaleEnum"];
+            /**
+             * Контекст
+             * @default vrn
+             */
+            context: components["schemas"]["ContextEnum"] | components["schemas"]["BlankEnum"];
+            /** Ключ */
+            key: string;
+            /** Значение */
+            value: string;
+        };
         Faq: {
             readonly id: number;
             /** Тип вопроса */
@@ -221,6 +261,12 @@ export interface components {
             /** Ответ */
             answer: string;
         };
+        /**
+         * @description * `en` - en
+         *     * `ru` - ru
+         * @enum {string}
+         */
+        LocaleEnum: "en" | "ru";
         PatchedCampaign: {
             readonly id?: number;
             /**
@@ -500,6 +546,28 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["Campaign"];
+                };
+            };
+        };
+    };
+    api_v1_dictionary_list: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                context: string;
+                locale: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["Dictionary"][];
                 };
             };
         };
