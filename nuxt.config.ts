@@ -28,7 +28,7 @@ export default defineNuxtConfig({
   },  
   i18n: {
     locales: [
-      { code: 'ru', name: 'ru-RU', file: 'ru.json' }
+      { code: 'ru', name: 'ru-RU', file: 'loader.ts' }
     ],
     defaultLocale: 'ru'
   },
